@@ -120,20 +120,20 @@ img{
 .box1:hover{
     background: var(--thirdColor);
     transform: translateY(-200px);
-    transition: transform 2s linear;
+    transition: transform 5s ease-in-out;
 }
 .box2:hover{
     background: var(--thirdColor);
     transform: rotate(720deg);
-    transition:  transform 1s ease-in-out;
+    transition:  transform 5s ease-in-out;
 }
 .box3:hover{
     background: var(--thirdColor);
     transform: rotate(-720deg);
-    transition:  transform 1s ease-in-out;
+    transition:  transform 5s ease-in-out;
 }
 .box4:hover{
     background: var(--thirdColor);
     transform: translateX(200px);
-    transition:  transform 1s ease-in-out;
+    transition:  transform 5s ease-in-out;
 }
