@@ -2,58 +2,82 @@
     --firstColor: rgb(24, 170, 228);
     --secondColor: rgb(255, 255, 255);
     --thirdColor: rgb(18, 127, 170);
+    --color:  #0c192c;
 }
 
 body{
+    width: 100vw;
+    height: 100vh;
     margin: 0px;
     padding: 0px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 .head{
+    width: 100vw;
     height: 100px;
-    width: 100%;
     display: flex;
     flex-direction: row;    
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    background: fixed var(--firstColor);
+    align-content: center;
+    background:  linear-gradient(to bottom, rgb(0, 60, 255), rgb(87, 126, 255), rgb(162, 183, 252), rgba(178, 196, 255, 0.041));
     
 }
-.title{
-    font-size: 30px;
-    font-weight: bold;
-    text-wrap: nowrap;
-}
-.links{
-    width: 600px;
+.head .links {
+    height: 70px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.head .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
 }
 a{
-    font-size: 20px;
-    color: var(--secondColor);
-    text-decoration: none;
+    position: relative;
+    padding: 0 10px;
+}
+a:after{
+    content:"";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left:0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a:hover:after{
+    width: 100%;
 }
 
 .core{
-    height: 670px;
-    width: 100%;
+    width: 100vw;
+    /*height: 670px;*/
     display: flex;
     flex-direction: row;    
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
-    background: fixed var(--secondColor);
 }
 .info{
     font-size: 20px;
+    width: 60%;
 }
 p{
-    text-wrap: nowrap;
+    text-wrap: wrap;
+
 }
 
 .card{
@@ -90,7 +114,11 @@ img{
 .footr{
     height: 100px;
     width: 100%;
-    background: fixed var(--firstColor);
+    background:  linear-gradient(to bottom, 
+    rgba(178, 196, 255, 0.041),
+    rgb(162, 183, 252),
+    rgb(87, 126, 255),
+    rgb(0, 60, 255));
     display: flex;
     flex-direction: row;
     align-items: center;

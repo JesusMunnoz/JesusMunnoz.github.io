@@ -29,11 +29,10 @@ body{
     align-items: center;
     align-content: center;
     background:  linear-gradient(to bottom, 
-    rgb(0, 60, 255), 
+    rgb(0, 60, 255),
     rgb(87, 126, 255), 
     rgb(162, 183, 252), 
-    rgba(178, 196, 255, 0.041));
-    
+    rgba(178, 196, 255, 0.041)); 
 }
 .head .links {
     height: 70px;
@@ -66,40 +65,40 @@ a:hover:after{
 }
 
 .core{
-    
     width: 100vw;
     display: flex;
     flex-direction: row;    
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
-
 }
 
 .card{
     position: relative;
     width: 500px;
-    height: 550px;
+    height: 500px;
+    border-radius: 20%;
     margin-left: 10px;
-    
 }
-.face{
+.card .face{
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 500px;
-    height: 550px;
+    height: 500px;
     backface-visibility: hidden;
     overflow: hidden;
     transition: .5s;
     
 }
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+}
 
 img{
-    height: 500px;
     width:400px;
-    border-radius: 10%;
+    border-radius: 20%;
     aspect-ratio: 1/1;
     object-fit: cover;
     border: 6px solid black;
@@ -107,92 +106,54 @@ img{
     box-shadow: 0 5px 10px #000;
 }
 
+
+/*TARJETAS*/
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(24, 170, 228);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-wrap: wrap;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+    width: 400px;
+    height: 400px;
+    border-radius: 20%;
+}
+.card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
 .info{
     font-size: 20px;
 }
 
+
 p{
     text-wrap: nowrap;
 }
-.p1{
-    font-weight: bold;
-}
 
-.boton{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-button{
-    width: 150px;
-    height: 50px;
-    background: #ff3c78;
-    border-radius: 5px;
-    font-size: 12px;
-    color: white;
-}
-
-.proyects{
-    text-decoration: none;
-    cursor: pointer;
-}
-button .proyects:hover{
-    text-decoration: underline;
-}
-
-
-.footr{
+.foot{
     height: 100px;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
     background:  linear-gradient(to bottom, 
     rgba(178, 196, 255, 0.041),
     rgb(162, 183, 252),
     rgb(87, 126, 255),
     rgb(0, 60, 255));
-}
-.boxes{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-
-}
-.box{
-    background: fixed var(--secondColor);
-    height: 30px;
-    width: 30px;
-    border-radius: 5px;
-    box-shadow: 3px 3px 0px 0px #000;
-}
-
-.box:hover{
-    background: var(--firstColor);
-}
-.box1:hover{
-    background: var(--thirdColor);
-    transform: translateY(-200px);
-    transition: transform 2s linear;
-}
-.box2:hover{
-    background: var(--thirdColor);
-    transform: rotate(720deg);
-    transition:  transform 1s ease-in-out;
-}
-.box3:hover{
-    background: var(--thirdColor);
-    transform: rotate(-720deg);
-    transition:  transform 1s ease-in-out;
-}
-.box4:hover{
-    background: var(--thirdColor);
-    transform: translateX(200px);
-    transition:  transform 1s ease-in-out;
 }
