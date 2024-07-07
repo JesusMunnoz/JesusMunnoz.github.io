@@ -52,6 +52,8 @@ header{
     width: 100vw;
     height: 680px;
     width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -91,9 +93,22 @@ header{
     padding: 20px;
     gap: 5px;
 }
-.botonF{
+/*.botonF{
     width: 100px;
     height: 25px;
+}*/
+
+.botonF{
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    background: #1f53c5;
+    border: 1px solid #182c4e;
+    box-shadow: 0 1px 5px #000;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;;
+    text-align: center;
 }
 
 
@@ -222,7 +237,7 @@ header{
     color: white;
     text-decoration: none;
 }
-/*.form .botons{
+.boton{
     border-radius: 5px;
     width: 125px;
     background: #1f53c5;
@@ -233,7 +248,7 @@ header{
     margin: 16px 0;
     font-size: 16px;;
     text-align: center;
-}*/
+}
 /*button{
     border-radius: 5px;
     width: 125px;
