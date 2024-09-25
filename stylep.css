@@ -167,3 +167,12 @@ a:hover:after{
 .card:hover .back{
     transform: perspective(600px) rotateY(360deg);
 }
+
+.bSwap {
+    text-decoration: none;
+    color: inherit;
+}
+.bSwap:hover {
+    text-decoration: none; 
+    color: inherit;
+}
