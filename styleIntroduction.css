@@ -140,12 +140,13 @@ img{
 }
 
 .info{
+    width: 40vw;
     font-size: 20px;
 }
 
 
 p{
-    text-wrap: nowrap;
+    text-wrap: wrap;
 }
 
 .foot{
