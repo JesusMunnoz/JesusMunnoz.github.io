@@ -71,7 +71,7 @@ a:hover:after{
     flex-direction: row;    
     justify-content: space-around;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .card{
