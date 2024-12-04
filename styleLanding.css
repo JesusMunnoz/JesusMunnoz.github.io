@@ -106,20 +106,6 @@ img{
     box-shadow: 0 5px 10px #000;
 }
 
-
-/*TARJETAS*/
-.card .back{
-    transform: perspective(600px) rotateY(180deg);
-}
-
-
-.card:hover .front{
-    transform: perspective(600px) rotateY(180deg);
-}
-.card:hover .back{
-    transform: perspective(600px) rotateY(360deg);
-}
-
 .info{
     width: 40vw;
     font-size: 20px;
