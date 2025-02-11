@@ -159,7 +159,7 @@ img {
 .pokeImg {
     display: none; /* Oculta la imagen por defecto */
 }
-.pokeImg[src] {
+.pokeImg:not([src=""]):not([src="about:blank"]){
     display: block; /* Muestra la imagen si el atributo 'src' está presente */
 }
 
