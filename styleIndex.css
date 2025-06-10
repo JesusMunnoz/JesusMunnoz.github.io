@@ -279,6 +279,14 @@
   .about-containers,
   .about-details-container {
     display: flex;
+    justify-content: center;
+  }
+
+  .about-containers-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
   }
   
   .about-pic {
@@ -299,6 +307,17 @@
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
+  }
+
+  .details-container-projects{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    max-width: 300px;
   }
   
   .section-container {
@@ -327,8 +346,12 @@
 
   .experience-details-container {
     display: flex;
+  }
+  
+  .projects-details-container {
+    display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
   }
 
   .article-container {
